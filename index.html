@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+
+<div class="container clearfix">
+    <div class="left maincolumn">
+        <div class="bl-search">
+            <input class="nameinput" type="text" name="prodname" placeholder="Назва товару">
+            <button id="toListBut" class="add-button" data-tooltip="Додати товар">Додати</button>
+        </div>
+        <!-- product list-->
+         <div class="product" id="newProd">
+            <div class="sublist for-add">
+            </div>
+            <div class="sublist editDiv">
+                <input id="editName">
+            </div>
+            <div class="sublist centered">
+                <button class="countbut minBut tooltip" data-tooltip="Неможливо">−</button>
+                <span class="leftamount">1</span>
+                <button class="countbut plusbut tooltip" data-tooltip="Більше">+</button>
+            </div>
+            <div class="sublist rightalign">
+                <button class="boughtbut tooltip" data-tooltip="Куплено">Куплено</button>
+                <button class="delbut tooltip" data-tooltip="Видалити">x</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right maincolumn">
+        <div class="rightlistrow">
+            <span>Залишилося</span>
+        </div>
+        <div class="rightlistrow" id="leftover">
+            <!-- leftovers -->
+            <span class="item" id="prodLeft">
+                <span class="right-prodName"></span>
+                <span class="rightamount">1</span>
+           </span>
+        </div>
+        <div class="rightlistrow">Куплено</div>
+        <div class="rightlistrow" id="crossedProd">
+            <!-- bought products-->
+            <span class="item bought" id="boughtProd">
+                <span class="itemName"></span>
+                <span class="rightamount bought">1</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<!----------------HIDDEN------------>
+
+<div class="badge">
+  <div class="badgetext badge-print">Created by Vania Avdieienko</div>
+    <div class="upper-badge">
+        <span class="badgetext">Buy List</span>
+    </div>
+    <div class="lower-badge">
+        <span class="badgetext createdby">Created by:</span>
+        <span class="badgetext">Vania Avdieienko</span>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
